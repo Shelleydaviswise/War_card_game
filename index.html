@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>War Game</title>
+  </head>
+  <body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <h3> Play a Game of War</h3>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- End of Navbar -->
+
+  <div class = "container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div>
+           <button type="button" class="btn btn-default p1btn" aria-label="">Player 1 
+           </button>
+        </div>
+        <div id = 'left-panel'> </div> 
+        <div class = 'p1score'> </div>    
+      </div>
+
+      <div class="col-sm-4"> <!-- middle column -->
+          <button type="button" class="btn btn-default fightp1">Fight Player 1!</button>
+          <button type="button" class="btn btn-default fightp2">Fight Player 2!</button>
+      </div> <!-- close middle column -->
+
+
+      <div class="col-sm-4">
+        <div>
+           <button type="button" class="btn btn-default p2btn" aria-label="">Player 2 
+           </button>
+        </div>
+        <div id = 'right-panel'> </div> 
+        <div class = 'p2score'> </div> 
+           
+      </div>
+      
+    </div> <!-- close row div -->
+  </div> <!-- close container div -->
+
+    <script data-main="./javascripts/main" src="lib/bower_components/requirejs/require.js"></script>
+  </body>
+</html>
